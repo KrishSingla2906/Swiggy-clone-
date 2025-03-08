@@ -7,7 +7,7 @@ class About extends Component {
   constructor(props) {
     super(props);
 
-    //console.log("Parent Constructor");
+    console.log("Parent Constructor");
   }
 
   componentDidMount() {
@@ -20,7 +20,7 @@ class About extends Component {
     return (
       <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
         <h1>About Class Component</h1>
-        <div >
+        <div>
           LoggedIn User
           <UserContext.Consumer>
             {({ loggedInUser }) => (
@@ -28,7 +28,7 @@ class About extends Component {
             )}
           </UserContext.Consumer>
         </div>
-        <h2 >This is Namaste React Web Series</h2>
+        <h2>This is Namaste React Web Series</h2>
         <UserClass name={"First"} location={"Panipat Class"} />
       </div>
     );
